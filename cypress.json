@@ -1,0 +1,4 @@
+{
+    "baseUrl": "https://www.missguided.co.uk",
+    "testFiles": "**/*.{feature,features}"
+}
