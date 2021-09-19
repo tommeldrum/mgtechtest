@@ -13,7 +13,7 @@ When('the user sets the price range maximum to £19.99', () => {
     .type('19.99{enter}')
 
  Then('only dresses under £19.99 are displayed', () => {
-    cy.wait(5000)
+    cy.wait(10000)
     cy.get('[data-test=price]')
     .each(($el) => {                    //Iterate through price of each item and check it's less than £20
         var el = $el[0].innerText
@@ -23,6 +23,6 @@ When('the user sets the price range maximum to £19.99', () => {
         expect(numb).to.be.lessThan(20)
     })
 })
- })
+})
 
  
